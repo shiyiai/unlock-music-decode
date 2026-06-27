@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unlock Music Decode"
+  short_description: "用 um CLI 解码音乐文件并输出原始文件"
+  default_prompt: "Use $unlock-music-decode to 获取原始文件 from encrypted music files."
