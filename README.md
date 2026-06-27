@@ -68,12 +68,6 @@ git pull
 
 安装完成后，重启 Codex 或开启新的 Codex 会话，让 skill 列表重新加载。之后在对话里说“获取原始文件”“解码音乐文件”等需求时，Codex 就可以按 `SKILL.md` 中的流程调用这个 skill。
 
-### 关于 `npx` 和 `codex plugin add`
-
-当前 Codex CLI 没有 `npx skill add` 或 `codex skill add` 这样的官方命令。这个仓库目前是 standalone skill，推荐用 `$skill-installer` 或手动 `git clone` 安装。
-
-`codex plugin add` 是安装 plugin 的命令，适用于已经打包成 Codex plugin、并且发布到已配置 marketplace 的项目。如果以后要支持 `codex plugin add unlock-music-decode` 这类安装方式，需要先把本仓库改造成 plugin，并添加 `.codex-plugin/plugin.json` 和 marketplace 配置。
-
 ## CLI 准备逻辑
 
 `ensure_um_darwin_arm64.sh` 会按以下顺序查找或安装 Unlock Music CLI：
